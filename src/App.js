@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
 import AddRoom from './component/AddRoom';
 import Home from './component/Home';
@@ -35,7 +35,7 @@ const AddDevice=(i,DeviceObj)=>{
   let tempo=rooms
   tempo[i].roomDevices=[...tempo[i].roomDevices,DeviceObj]
   
-  console.log(tempo[0].roomDevices);
+  
   
   setRooms(tempo)
 }
